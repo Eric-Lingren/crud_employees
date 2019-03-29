@@ -1,0 +1,22 @@
+.myForm{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.formWrapper{
+    width: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0,0,0,.7);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.column{
+    width: 50%;
+}
