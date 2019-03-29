@@ -21,7 +21,7 @@ class App extends Component {
       <div className='app-wrapper'>
         <div className='button-wrapper'>
           <Button color="primary" onClick={this.toggleNewEmployeeForm}>
-            { this.state.showNewEmployeeForm ? "Hide Employee Form" : "Create New Employee" }
+            { this.state.showNewEmployeeForm ? "Hide New Employee Form" : "Create New Employee" }
           </Button>
         </div>
         { this.state.showNewEmployeeForm ? <NewEmployeeForm /> : null }

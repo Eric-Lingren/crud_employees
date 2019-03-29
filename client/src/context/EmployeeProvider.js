@@ -17,7 +17,6 @@ class EmployeeProvider extends Component {
             selectedEmployeeSalary: '',
             selectedEmployeeDepartment: '',
             selectedEmployeeBirthday: '',
-
         }
     }
 
@@ -32,7 +31,7 @@ class EmployeeProvider extends Component {
 
     addEmployee = (newEmployee) => {
         axios.post('/employees', newEmployee).then(response => {
-            console.log(response.data)
+            this.getEmployees()
         })
         .catch(err => console.log(err.response.data.errMsg))
     }

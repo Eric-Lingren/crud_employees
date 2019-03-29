@@ -53,7 +53,7 @@ employeeRouter.delete('/:id', (req, res, next) => {
             res.status(500)
             return next(err)
         }
-        return res.status(202).send(`succesfully deleted employee`)
+        return res.status(202).send(`successfully deleted employee`)
     })
 })
 

@@ -9,7 +9,7 @@
     cursor: pointer;
     font-weight: bolder;
 }
-.editEmplyeeForm{
+.edit-employee-form{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -20,7 +20,7 @@
     height: 100%;
     color: white;
 }
-.editFormWrapper{
+.edit-form-wrapper{
     width: 70%;
     display: flex;
     align-content: center;

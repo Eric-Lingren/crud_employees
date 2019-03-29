@@ -45,15 +45,15 @@ class editEmployeeForm extends Component {
 
     render() {
         return (
-            <Form className='editEmplyeeForm' onSubmit={this.handleSubmit}>
+            <Form className='edit-employee-form' onSubmit={this.handleSubmit}>
                 <div className='close-wrapper'>
-                    <h4 className='close-icon' onClick={this.props.closeEditForm} >X</h4>
+                    <h4 className='close-icon' onClick={this.props.closeEditForm}> X </h4>
                 </div>
-                <h2>Edit Employee</h2>
-                <div className='editFormWrapper'>
+                <h2> Edit Employee </h2>
+                <div className='edit-form-wrapper'>
                     <div className='column'>
                         <FormGroup>
-                            <Label for="employeeIDLabel">Employee ID</Label>
+                            <Label for="employeeIDLabel"> Employee ID </Label>
                             <Input  type="number" 
                                     name="employeeId" 
                                     id="employeeIdInput" 
@@ -62,7 +62,7 @@ class editEmployeeForm extends Component {
                                     onChange={this.handleChange}/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="firstNameLabel">First Name</Label>
+                            <Label for="firstNameLabel"> First Name </Label>
                             <Input  type="text" 
                                     name="firstName" 
                                     id="firstNameInput" 
@@ -71,7 +71,7 @@ class editEmployeeForm extends Component {
                                     onChange={this.handleChange}/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="lastNameLabel">Last Name</Label>
+                            <Label for="lastNameLabel"> Last Name </Label>
                             <Input  type="text" 
                                     name="lastName" 
                                     id="employeeLastNameInput" 
@@ -80,7 +80,7 @@ class editEmployeeForm extends Component {
                                     onChange={this.handleChange}/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="emailLabel">Employee Email</Label>
+                            <Label for="emailLabel"> Employee Email </Label>
                             <Input  type="email" 
                                     name="email" 
                                     id="emailInput" 
@@ -91,22 +91,22 @@ class editEmployeeForm extends Component {
                     </div>
                     <div className='column'>
                         <FormGroup>
-                            <Label for="departmentSelect">Department</Label>
+                            <Label for="departmentSelect"> Department </Label>
                             <Input  type="select" 
                                     name="department" 
                                     id="departmentInput" 
                                     onChange={this.handleChange}
                                     value={this.state.department}>
-                                <option>---</option>
-                                <option value='engineering'>Engineering</option>
-                                <option value='human resources'>Human Resources</option>
-                                <option value='sales'>Sales</option>
-                                <option value='executive'>Executive</option>
-                                <option value='customer care'>Customer Care</option>
+                                <option> --- </option>
+                                <option value='engineering'> Engineering </option>
+                                <option value='human resources'> Human Resources </option>
+                                <option value='sales'> Sales </option>
+                                <option value='executive'> Executive </option>
+                                <option value='customer care'> Customer Care </option>
                             </Input>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="phoneLabel">Phone</Label>
+                            <Label for="phoneLabel"> Phone </Label>
                             <Input  type="number" 
                                     name="phone" 
                                     id="phoneInput" 
@@ -115,7 +115,7 @@ class editEmployeeForm extends Component {
                                     onChange={this.handleChange}/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="salaryLabel">Salary</Label>
+                            <Label for="salaryLabel"> Salary </Label>
                             <Input  type="number" 
                                     name="salary" 
                                     id="salaryInput" 
@@ -124,7 +124,7 @@ class editEmployeeForm extends Component {
                                     onChange={this.handleChange}/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="birthdayLabel">Birthday</Label>
+                            <Label for="birthdayLabel"> Birthday </Label>
                             <Input  type="string" 
                                     name="birthday" 
                                     id="birthdayInput" 
@@ -134,7 +134,7 @@ class editEmployeeForm extends Component {
                         </FormGroup>
                     </div>
                 </div>
-                <Button color="success">Save Updates</Button> 
+                <Button color="success"> Save Updates </Button> 
             </Form>
         );
     }

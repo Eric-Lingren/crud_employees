@@ -17,9 +17,9 @@ class EmployeeList extends Component {
     }
 
     openEditForm = (e) => {
-        let employee = e.target.value
+        let selectedEmployee = e.target.value
         this.setState({ isEditingEmployee: !this.state.isEditingEmployee })
-        this.props.getOneEmployee(employee)
+        this.props.getOneEmployee(selectedEmployee)
     }
 
     closeEditForm = () => {
@@ -54,14 +54,14 @@ class EmployeeList extends Component {
                 <Table className='table' dark>
                     <thead>
                         <tr>
-                            <th>Employee ID</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Salary</th>
-                            <th>Department</th>
-                            <th>Birthday</th>
+                            <th> Employee ID </th>
+                            <th> First Name </th>
+                            <th> Last Name </th>
+                            <th> Email </th>
+                            <th> Phone </th>
+                            <th> Salary </th>
+                            <th> Department </th>
+                            <th> Birthday </th>
                         </tr>
                     </thead>
                     <tbody>

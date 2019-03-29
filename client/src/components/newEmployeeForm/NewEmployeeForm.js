@@ -36,17 +36,16 @@ class newEmployeeForm extends Component {
             department: '',
             birthday: '',
         })
-        this.props.getEmployees()
     }
 
     render() {
         return (
-            <Form className='myForm' onSubmit={this.handleSubmit}>
-                <h2>Add Employee</h2>
-                <div className='formWrapper'>
+            <Form className='new-employee-form' onSubmit={this.handleSubmit}>
+                <h2> Add Employee </h2>
+                <div className='form-wrapper'>
                     <div className='column'>
                         <FormGroup>
-                            <Label for="employeeIDLabel">Employee ID</Label>
+                            <Label for="employeeIDLabel"> Employee ID </Label>
                             <Input  type="number" 
                                     name="employeeId" 
                                     id="employeeIdInput" 
@@ -56,7 +55,7 @@ class newEmployeeForm extends Component {
                                     required/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="firstNameLabel">First Name</Label>
+                            <Label for="firstNameLabel"> First Name </Label>
                             <Input  type="text" 
                                     name="firstName" 
                                     id="firstNameInput" 
@@ -66,7 +65,7 @@ class newEmployeeForm extends Component {
                                     required/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="lastNameLabel">Last Name</Label>
+                            <Label for="lastNameLabel"> Last Name </Label>
                             <Input  type="text" 
                                     name="lastName" 
                                     id="employeeLastNameInput" 
@@ -76,7 +75,7 @@ class newEmployeeForm extends Component {
                                     required/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="emailLabel">Employee Email</Label>
+                            <Label for="emailLabel"> Employee Email </Label>
                             <Input  type="email" 
                                     name="email" 
                                     id="emailInput" 
@@ -88,31 +87,31 @@ class newEmployeeForm extends Component {
                     </div>
                     <div className='column'>
                         <FormGroup>
-                            <Label for="departmentSelect">Department</Label>
+                            <Label for="departmentSelect"> Department </Label>
                             <Input  type="select" 
                                     name="department" 
                                     id="departmentInput" 
                                     onChange={this.handleChange}
                                     value={this.state.department}>
                                 <option>---</option>
-                                <option value='engineering'>Engineering</option>
-                                <option value='human resources'>Human Resources</option>
-                                <option value='sales'>Sales</option>
-                                <option value='executive'>Executive</option>
-                                <option value='customer care'>Customer Care</option>
+                                <option value='engineering'> Engineering </option>
+                                <option value='human resources'> Human Resources </option>
+                                <option value='sales'> Sales </option>
+                                <option value='executive'> Executive </option>
+                                <option value='customer care'> Customer Care </option>
                             </Input>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="phoneLabel">Phone</Label>
+                            <Label for="phoneLabel"> Phone </Label>
                             <Input  type="number" 
                                     name="phone" 
                                     id="phoneInput" 
-                                    placeholder="555-345-6789" 
+                                    placeholder="5553456789" 
                                     value={this.state.phone} 
                                     onChange={this.handleChange}/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="salaryLabel">Salary</Label>
+                            <Label for="salaryLabel"> Salary </Label>
                             <Input  type="number" 
                                     name="salary" 
                                     id="salaryInput" 
@@ -121,7 +120,7 @@ class newEmployeeForm extends Component {
                                     onChange={this.handleChange}/>
                         </FormGroup>
                         <FormGroup>
-                            <Label for="birthdayLabel">Birthday</Label>
+                            <Label for="birthdayLabel"> Birthday </Label>
                             <Input  type="text" 
                                     name="birthday" 
                                     id="birthdayInput" 
@@ -131,7 +130,7 @@ class newEmployeeForm extends Component {
                         </FormGroup>
                     </div>
                 </div>
-                <Button color="success">Add New Employee</Button> 
+                <Button color="success"> Add New Employee </Button> 
             </Form>
         );
     }
